@@ -1,0 +1,22 @@
+.skillssection {
+    display: flex;
+    background-color: #eee;
+    justify-content: space-between;
+
+}
+
+.leftsection {
+    background-color: red;
+    width: 100%;
+    margin:10px;
+    height: 200px;
+    padding: 15px;
+}
+
+.rightsection {
+    background-color: blue;
+    width: 100%;
+    margin:10px;
+    height: 200px;
+    padding: 15px;
+}

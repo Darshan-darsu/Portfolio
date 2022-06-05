@@ -1,0 +1,52 @@
+
+.header-wrapper{
+  padding:15px;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+ background-color: bisque; 
+}
+
+.header-left{
+    display: flex;
+    flex-grow: 1;
+    padding-left: 10px;
+    align-items: center;
+
+}
+
+.headername{
+    padding-right: 10px;
+}
+
+.header-right{
+    display: flex;
+}
+.header-list{
+    display: flex;
+    flex-grow: 10;
+    padding-right:10px;
+}
+
+.header-list ul {
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+
+ 
+}
+
+.header-list li {
+    display: flex;
+    padding:10px;   
+}
+
+.header-list li:hover {
+    display: flex;
+    padding:10px; 
+    cursor: pointer;  
+    color:#fff ;
+}
+
+
+
