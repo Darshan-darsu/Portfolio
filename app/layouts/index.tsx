@@ -1,4 +1,3 @@
-import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import PortfolioSections from "../components/main";
 import InfoPanel from "../components/sidebar/infopanel ";
@@ -13,7 +12,6 @@ const Layout = () => {
         <PortfolioSections />
         <InfoPanel />
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };
