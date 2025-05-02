@@ -1,5 +1,6 @@
+import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
-import PortfolioSections from "../components/main";
+import PortFolio from "../components/main";
 import InfoPanel from "../components/sidebar/infopanel ";
 import NavigationPanel from "../components/sidebar/navigationpanel";
 
@@ -9,9 +10,11 @@ const Layout = () => {
       <Header />
       <div className="flex flex-grow pt-16 ">
         <NavigationPanel />
-        <PortfolioSections />
+        <PortFolio />
         <InfoPanel />
       </div>
+
+      <Footer />
     </div>
   );
 };

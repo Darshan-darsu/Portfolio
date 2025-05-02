@@ -11,7 +11,7 @@ const ExpereinceTimeLine = () => {
       <Circle />
       {CompanyEvents.map((item, idx) => (
         <Fragment key={item.name}>
-          <div className="grid grid-cols-[1fr_auto_1fr] gap-x-2 mx-auto items-center">
+          <div className="grid md:grid-cols-[1fr_auto_1fr] gap-x-2 mx-auto items-center">
             {item.direction === "left" ? (
               <EventCard
                 name={item.name}
@@ -20,7 +20,7 @@ const ExpereinceTimeLine = () => {
                 roles={item.roles}
               />
             ) : (
-              <div />
+              <div className="hidden md:block" />
             )}
             <Pillar />
             {item.direction === "right" ? (
@@ -31,7 +31,7 @@ const ExpereinceTimeLine = () => {
                 roles={item.roles}
               />
             ) : (
-              <div />
+              <div className="hidden md:block" />
             )}
           </div>
           {CompanyEvents.length - 1 == idx ? "" : <Circle />}

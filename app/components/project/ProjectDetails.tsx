@@ -14,7 +14,7 @@ const ProjectDetails: React.FC<ProjectProps> = ({
   tags,
 }) => {
   return (
-    <div className="bg-background opacity-90 border-2 shadow-2xl rounded-3xl  transition p-4 flex flex-col items-center">
+    <div className="bg-background opacity-90 border border-foreground  shadow-2xl rounded-3xl  transition p-4 flex flex-col items-center">
       <div className="w-[200px] h-[200px] relative mb-2">
         <Image src={img} alt={title} fill className="object-cover rounded-md" />
       </div>

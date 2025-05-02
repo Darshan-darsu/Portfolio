@@ -6,7 +6,7 @@ import { constantData } from "@/app/constants";
 
 const NavigationPanel = () => {
   return (
-    <aside className="w-[10%] bg-background p-4 h-screen fixed left-0  flex flex-col items-center justify-between">
+    <aside className="hidden md:w-[10%] md:flex  bg-background p-4 h-screen fixed left-0 flex-col items-center justify-between">
       <div className="relative flex flex-col items-center h-full top-40">
         <div className="absolute w-[2px] bg-bordercolor bottom-0 top-1/2"></div>
         <div className="flex flex-col items-center space-y-8">

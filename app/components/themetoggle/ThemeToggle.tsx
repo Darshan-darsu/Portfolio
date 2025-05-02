@@ -28,7 +28,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setIsDark(!isDark)}
-      className="p-1 rounded-full bg-foreground mr-5"
+      className="p-1 rounded-full bg-foreground mr-5 hover:bg-bordercolor"
     >
       <svg
         className="w-6 h-6 text-background "
