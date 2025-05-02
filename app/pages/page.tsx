@@ -1,16 +1,16 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Portfolio from "../components/main/Portfolio";
 
 export default function TestComponent() {
   const [isScrollingUp, setIsScrollingUp] = useState(true);
-  let lastScrollY = 0;
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      setIsScrollingUp(currentScrollY < lastScrollY);
-      lastScrollY = currentScrollY;
+      setIsScrollingUp(currentScrollY < lastScrollY.current);
+      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);

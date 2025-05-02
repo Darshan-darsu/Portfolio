@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface ProjectProps {
-  img: any;
+  img: StaticImageData;
   title: string;
   description: string[];
   tags: string[];

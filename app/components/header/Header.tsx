@@ -23,6 +23,7 @@ const Header = () => {
       <div className="flex p-2 w-full justify-end">
         <AnimatedNavItem href="#home" label="Home" />
         <AnimatedNavItem href="#experience" label="Experience" />
+        <AnimatedNavItem href="#skills" label="Skills" />
         <AnimatedNavItem href="#projects" label="Projects" />
         <AnimatedNavItem href="#contact" label="Contact" />
       </div>
