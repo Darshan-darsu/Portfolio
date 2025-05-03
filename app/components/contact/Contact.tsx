@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import Button from "@/app/ui-component/Button";
 import emailjs from "@emailjs/browser";
@@ -71,7 +72,7 @@ const Contact: React.FC = () => {
     }, 3000);
   }
   return (
-    <section id="contact" className="bg-background">
+    <section id="contact" className="bg-background p-4">
       {toast && (
         <div
           className={`fixed top-5 right-5 z-50 flex items-center gap-2 px-6 py-2 rounded-md shadow-lg text-white transition transform ease-in-out duration-300

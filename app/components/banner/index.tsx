@@ -1,13 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import Button from "@/app/ui-component/Button";
-import AboutMe from "../aboutme/AboutMe";
-import Experience from "../experience/Experience";
-import Skills from "../skills/Skills";
-import ProjectDetails from "../project/Project";
-import Contact from "../contact/Contact";
 
-export default function HeroSection() {
+export default function Banner() {
   return (
     <motion.main
       initial={{ y: -150, opacity: 1 }}
@@ -18,7 +13,7 @@ export default function HeroSection() {
         damping: 12, // Reduces overshooting
         mass: 0.8, // Adjusts the weight of the animation
       }}
-      className="w-[80%] bg-background p-4 mx-[10%]"
+      className=" bg-background p-4"
       id="home"
     >
       <motion.section className="py-2">
@@ -70,14 +65,18 @@ export default function HeroSection() {
             delay: 0.5,
           }}
         >
-          <Button onClick={() => console.log("Clicked!")}>Get In Touch</Button>
+          <Button
+            onClick={() => {
+              const contactSection = document.getElementById("contact");
+              if (contactSection) {
+                contactSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            Get In Touch
+          </Button>
         </motion.div>
       </motion.section>
-      <AboutMe />
-      <Experience />
-      <Skills />
-      <ProjectDetails />
-      <Contact />
     </motion.main>
   );
 }

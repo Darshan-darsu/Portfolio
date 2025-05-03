@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 interface SkillSectionProps {
-  logo: any;
+  logo: string;
   name: string;
 }
 
